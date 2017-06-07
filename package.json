@@ -1,0 +1,14 @@
+{
+  "name": "sudipto",
+  "version": "1.0.0",
+  "description": "learning javascript",
+  "main": "test",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "sudipto",
+  "license": "ISC"
+}
