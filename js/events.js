@@ -7,7 +7,7 @@
     var subHeading = document.getElementsByTagName('h2')[0];
     var header = document.getElementsByTagName('header')[0];
 
-        subHeading.addEventListener('hover', function () {
+        subHeading.addEventListener('hover', function (e) {
             console.log('Mose moved over', subHeading);
             e.stopPropagation();
         });
@@ -39,7 +39,6 @@
         console.log('Mouse event triggered');
     }
 
-    var counter = 0;
     // Adding event to capture move enter on header
     subHeading.addEventListener('mouseenter', mouseEvent);
     // removing event of entering mouse near the header
