@@ -62,14 +62,31 @@
     };
 
     const john = new Person('John');
-    console.log(john); // prints
-    console.log(john.greet());
+    console.log(john); // prints the object prototype.
+    console.log(john.greet()); // prints the result of greet function
 
     // Creating a new object and assigning that object an existing prototype in this case the person
     const bob = Object.create(Person.prototype, {
-        name: { writable: true, value: 'EXACTLY !!!'}
+        name: { writable: true, value: 'coming from the create and the prototype'}
     });
-    console.log(bob); // prints the object bob
-    console.log(bob.greet());
+    // Adding a new property job to the bob object and explicitly mentioning the property on it, with writeable, configureable and enumerable
+    Object.defineProperty(bob, 'job', {
+       value: 'Quality Analyst',
+        writeable: true,
+        configurable: true,
+        enumerable: true
+    });
 
+    // Appending properties to the bob object
+    Object.defineProperties(bob, {
+       heightinCM: {
+           value: 168
+       },
+        weightinLBS: {
+           value: 150
+        }
+    });
+    console.log("Entire Object", bob); // prints the entire bob object along with the new property added
+    console.log("Only JOB:", bob.job); // prints only oe property
+    console.log(bob.greet()); // greet bob
 }());
