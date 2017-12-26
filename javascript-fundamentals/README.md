@@ -1,5 +1,4 @@
 # [JavaScript Fundamentals][published url]
-## Instructor: [Dan Wellman][instructor url]
 
 So you want to learn JavaScript? In this course we'll start at the very beginning and learn everything about the language that a beginner needs to know. Maybe you've never programmed anything before, or maybe you're coming to JavaScript from another language. Whatever your situation, we'll go through everything you need to get up and running with one of the most popular and dynamic languages in use today.
 
